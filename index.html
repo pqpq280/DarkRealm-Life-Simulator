@@ -373,17 +373,17 @@ window.__drAsset = function(path) { return window.__DR_ASSETS[path] || path; };
 /* INLINE: data/people.js */
 const GODS = [
   {name:'역병갓', color:'#8aa99a', summary:'질병과 고통, 감염 경로를 통해 영향력을 넓힙니다.'},
-  {name:'전쟁갓', color:'#a66b5d', summary:'분쟁과 군사적 업적, 끊이지 않는 전쟁에 가까운 삶입니다.'},
+  {name:'전쟁갓', color:'#a66b5d', summary:'분쟁과 군사적 업적을 수호하고 끊이지 않는 전쟁을 추구합니다.'},
   {name:'마더갓', color:'#b17c94', summary:'생체 정보, 변이, 진화와 육체의 경계에 접촉합니다.'},
-  {name:'악몽갓', color:'#8a91b5', summary:'잠 자체가 아니라 악몽과 꿈속의 침입에 가까운 삶입니다.'},
-  {name:'해피갓', color:'#c8ad71', summary:'행복과 축복, 고통을 끝내려는 욕망에 접촉합니다.'},
-  {name:'시체갓', color:'#9fa89c', summary:'죽음과 보존, 육체가 끝난 뒤에도 남는 것에 가까운 삶입니다.'},
-  {name:'문명갓', color:'#d0e6c8', summary:'지식과 도구, 기록과 편리함이 삶을 바꿉니다.'},
-  {name:'왜곡갓', color:'#a48abc', summary:'강한 소망과 좌절, 희망이 무너지는 순간에 가까운 삶입니다.'},
+  {name:'악몽갓', color:'#8a91b5', summary:'악몽을 통해 꿈속의 침입을 반복합니다.'},
+  {name:'해피갓', color:'#c8ad71', summary:'영원한 행복, 고통을 끝내려는 욕망에 접촉합니다.'},
+  {name:'시체갓', color:'#9fa89c', summary:'육체가 끝난 뒤에도 남는 것을 보존하고 이용합니다.'},
+  {name:'문명갓', color:'#d0e6c8', summary:'지식과 도구, 기록과 편리함을 추구합니다.'},
+  {name:'왜곡갓', color:'#a48abc', summary:'강한 소망과 좌절, 희망이 무너지는 순간에 접촉합니다.'},
   {name:'다이스갓', color:'#b9a9d2', summary:'낮은 확률과 불확실한 결과에 운명을 맡기는 삶입니다.'},
-  {name:'머니갓', color:'#c6a86b', summary:'돈과 황금, 빚과 거래가 선택지를 제한하거나 넓힙니다.'}
+  {name:'머니갓', color:'#c6a86b', summary:'돈과 황금, 빚과 거래가 당신의 인생을 바꿀 수 있습니다.'}
 ];
-const PEOPLE = [{"id":"pioneer","name":"개척촌 농노","kind":"일반","god":"역병갓","role":"peasant","subtitle":"종자와 겨울을 지켜야 하는 삶","origin":"개척촌 농노","desc":"개척촌에서 태어났습니다. 집과 개간한 땅이 가장 큰 재산이며, 세금은 작물로 납부합니다. 촌장에게 땅을 돌려주면 자유민으로 떠날 수 있습니다.","stats":{"health":58,"mind":45,"intelligence":32,"might":34,"durability":35,"charm":30,"faith":22,"livelihood":28,"order":20,"heresy":0},"traits":["피로함"],"hair":"#51423a","coat":"#67634d","eye":"#695848","skin":"#cba38b","style":0,"robe":false,"accent":"plague"},{"id":"plague_quarantine","name":"격리촌 출신 주민","kind":"일반","god":"역병갓","role":"quarantine","subtitle":"병든 마을의 경계에서 자란 아이","origin":"격리촌","desc":"역병과 고립을 겪은 마을에서 자랐습니다. 사람들은 물과 이동 경로를 먼저 확인하며, 모르는 기침을 두려워합니다.","stats":{"health":48,"mind":40,"intelligence":45,"might":25,"durability":30,"charm":28,"faith":36,"livelihood":18,"order":35,"heresy":2},"traits":["피로함","병색"],"hair":"#51443d","coat":"#4c5c55","eye":"#687f78","skin":"#b9917b","style":1,"robe":false,"accent":"plague"},{"id":"herb_helper","name":"유랑 치료사의 조수","kind":"일반","god":"역병갓","role":"herbalist","subtitle":"약초와 증상의 이름을 외우는 견습생","origin":"유랑 치료사의 행렬","desc":"치료사의 짐을 나르며 약초와 증상의 차이를 배웁니다. 무엇을 고칠 수 있는지와 무엇을 피해야 하는지는 늘 다릅니다.","stats":{"health":62,"mind":48,"intelligence":62,"might":24,"durability":32,"charm":40,"faith":30,"livelihood":26,"order":28,"heresy":1},"traits":["약초 지식"],"hair":"#5a483a","coat":"#687064","eye":"#647d6c","skin":"#d0a68c","style":2,"robe":false,"accent":"plague"},{"id":"border_recruit","name":"변경의 징집병","kind":"일반","god":"전쟁갓","role":"recruit","subtitle":"국경의 분쟁을 먼저 배우는 아이","origin":"변경 영지","desc":"국경의 마을에서 태어났습니다. 영지의 경계가 바뀔 때마다 농지와 징집 명부도 바뀝니다.","stats":{"health":65,"mind":42,"intelligence":34,"might":55,"durability":52,"charm":24,"faith":28,"livelihood":24,"order":30,"heresy":0},"traits":["선빵필승"],"hair":"#463b32","coat":"#5f5145","eye":"#6e5b4a","skin":"#c59a7f","style":0,"robe":false,"accent":"war"},{"id":"estate_guard","name":"영지 경비의 자식","kind":"일반","god":"전쟁갓","role":"guard","subtitle":"문과 성벽을 지키는 법을 배운다","origin":"영주의 성채","desc":"경비대의 규율과 순찰 시간을 익히며 자랐습니다. 싸움을 피하는 법도 임무의 일부입니다.","stats":{"health":58,"mind":48,"intelligence":46,"might":48,"durability":50,"charm":28,"faith":30,"livelihood":34,"order":42,"heresy":0},"traits":["경계 근무"],"hair":"#594a3b","coat":"#535d5a","eye":"#75614d","skin":"#cba48a","style":1,"robe":false,"accent":"war"},{"id":"siege_smith","name":"공성 공방 견습","kind":"일반","god":"전쟁갓","role":"smith","subtitle":"쇠와 나무가 무기로 바뀌는 공방","origin":"공성 공방","desc":"대장장이의 공방에서 나무와 쇠의 무게를 배웁니다. 만든 물건이 누구를 향하는지는 장인의 몫이 아닐 때가 많습니다.","stats":{"health":62,"mind":50,"intelligence":58,"might":45,"durability":48,"charm":27,"faith":25,"livelihood":42,"order":24,"heresy":0},"traits":["무기 수리"],"hair":"#403832","coat":"#596362","eye":"#5b625d","skin":"#d0a58a","style":2,"robe":false,"accent":"war"},{"id":"midwife_helper","name":"산파의 조수","kind":"일반","god":"마더갓","role":"midwife","subtitle":"생명이 태어나는 방의 견습생","origin":"산파의 집","desc":"출산과 병간호를 돕습니다. 세상에 태어나는 생명은 누구나 똑같은 모양으로 시작하지 않는다는 사실을 배웁니다.","stats":{"health":54,"mind":55,"intelligence":62,"might":22,"durability":30,"charm":42,"faith":28,"livelihood":26,"order":33,"heresy":1},"traits":["생체 관찰"],"hair":"#5b4737","coat":"#6b6657","eye":"#5c7967","skin":"#d0aa92","style":1,"robe":false,"accent":"mother"},{"id":"hidden_mutant","name":"기형을 숨긴 사람","kind":"일반","god":"마더갓","role":"mutant","subtitle":"몸의 차이를 감추고 살아가는 아이","origin":"외딴 농가","desc":"태어날 때부터 남들과 다른 신체적 특징이 있습니다. 가족은 그 사실이 교단의 눈에 띄지 않도록 옷과 말을 고릅니다.","stats":{"health":66,"mind":38,"intelligence":42,"might":42,"durability":62,"charm":30,"faith":18,"livelihood":20,"order":12,"heresy":7},"traits":["신체변형"],"hair":"#44382e","coat":"#4e5d55","eye":"#687769","skin":"#c1947c","style":2,"robe":false,"accent":"mother"},{"id":"butcher_apprentice","name":"도축장의 견습","kind":"일반","god":"마더갓","role":"butcher","subtitle":"육체를 부위와 기능으로 읽는 사람","origin":"도축장","desc":"도축장에서 도구를 다루며 자랍니다. 다른 사람들이 외면하는 구조를 차분히 관찰하는 버릇이 생겼습니다.","stats":{"health":63,"mind":46,"intelligence":55,"might":38,"durability":44,"charm":20,"faith":22,"livelihood":35,"order":18,"heresy":4},"traits":["해부 지식"],"hair":"#3f3933","coat":"#5c5547","eye":"#6a665a","skin":"#c69d83","style":0,"robe":false,"accent":"mother"},{"id":"sleepwalker_child","name":"몽유병자의 자녀","kind":"일반","god":"악몽갓","role":"sleepwalker","subtitle":"잠든 사람이 문을 여는 집","origin":"외딴 마을","desc":"가족 중 한 명이 잠든 채 문을 열고 나가는 일이 반복됩니다. 집안에서는 잠들기 전에 문고리를 묶는 습관이 생겼습니다.","stats":{"health":48,"mind":30,"intelligence":46,"might":24,"durability":27,"charm":35,"faith":27,"livelihood":21,"order":20,"heresy":9},"traits":["악몽에 노출"],"hair":"#424049","coat":"#4f555f","eye":"#7b8c9c","skin":"#b99a87","style":1,"robe":false,"accent":"nightmare"},{"id":"nightmare_survivor","name":"악몽에서 깨어난 아이","kind":"일반","god":"악몽갓","role":"survivor","subtitle":"잊으려 해도 반복되는 밤","origin":"수도교회 부근","desc":"이유를 설명할 수 없는 악몽을 여러 번 겪었습니다. 깨어 있는 동안에도 꿈의 세부 사항을 확인하려고 합니다.","stats":{"health":52,"mind":65,"intelligence":45,"might":28,"durability":30,"charm":32,"faith":42,"livelihood":18,"order":37,"heresy":6},"traits":["불굴의 정신"],"hair":"#55505b","coat":"#555b67","eye":"#8b9ab2","skin":"#c9a38b","style":2,"robe":false,"accent":"nightmare"},{"id":"night_watch","name":"야간 경비의 견습","kind":"일반","god":"악몽갓","role":"watch","subtitle":"남들이 잠든 시간을 지키는 사람","origin":"성문 야간초소","desc":"사람들이 잠든 시간에 성문과 창고를 지키는 일을 배웁니다. 밤의 소리를 구분하는 능력이 생겼지만, 모든 소리를 설명할 수는 없습니다.","stats":{"health":60,"mind":48,"intelligence":50,"might":38,"durability":40,"charm":26,"faith":20,"livelihood":33,"order":34,"heresy":2},"traits":["야간 감각"],"hair":"#35353b","coat":"#4d5559","eye":"#73838c","skin":"#c59b82","style":0,"robe":false,"accent":"nightmare"},{"id":"chapel_singer","name":"예배당의 노래꾼","kind":"일반","god":"해피갓","role":"singer","subtitle":"노래로 슬픔을 덮으라는 사람들","origin":"수도교회","desc":"예배당에서 노래를 부릅니다. 사람들은 기쁨을 드러내라고 하지만, 감정은 명령을 따른다고 보장할 수 없습니다.","stats":{"health":55,"mind":45,"intelligence":42,"might":20,"durability":28,"charm":58,"faith":52,"livelihood":24,"order":62,"heresy":0},"traits":["공명 감수성"],"hair":"#716453","coat":"#68685e","eye":"#8eaa9b","skin":"#d7b49a","style":3,"robe":true,"accent":"happy"},{"id":"numb_child","name":"슬픔을 잃은 사람","kind":"일반","god":"해피갓","role":"numb","subtitle":"울어야 할 때도 표정이 바뀌지 않는다","origin":"가난한 구호원","desc":"큰 상실을 겪은 뒤 슬픔을 거의 느끼지 못합니다. 주변 사람들은 회복했다고 말하지만, 당신은 무엇이 사라졌는지 설명하지 못합니다.","stats":{"health":57,"mind":25,"intelligence":38,"might":24,"durability":31,"charm":25,"faith":35,"livelihood":16,"order":43,"heresy":4},"traits":["감정 결여","무쾌감"],"hair":"#4f4c49","coat":"#555958","eye":"#70766e","skin":"#c6a08a","style":1,"robe":false,"accent":"happy"},{"id":"festival_actor","name":"축제 광대의 자녀","kind":"일반","god":"해피갓","role":"performer","subtitle":"웃음을 팔아 식량을 얻는 집안","origin":"장터 축제단","desc":"축제 때 사람들을 웃기는 일을 돕습니다. 타인의 기분을 바꾸는 법을 배웠지만, 자신이 느끼는 감정은 별개의 문제입니다.","stats":{"health":56,"mind":48,"intelligence":51,"might":25,"durability":30,"charm":72,"faith":25,"livelihood":33,"order":19,"heresy":1},"traits":["능숙한 화술"],"hair":"#6a4f40","coat":"#67524d","eye":"#836e59","skin":"#d5ad91","style":3,"robe":false,"accent":"happy"},{"id":"gravedigger","name":"묘지기의 견습","kind":"일반","god":"시체갓","role":"gravedigger","subtitle":"무덤을 파고 이름을 새기는 사람","origin":"교회 묘지","desc":"무덤을 파고 묘비를 세우는 일을 배웁니다. 죽은 이의 이름을 제대로 기록하는 일이 산 자의 규칙과 얼마나 가까운지 알게 됩니다.","stats":{"health":54,"mind":49,"intelligence":50,"might":36,"durability":42,"charm":22,"faith":35,"livelihood":27,"order":31,"heresy":2},"traits":["죽음과 친숙함"],"hair":"#3d3935","coat":"#555b58","eye":"#68645b","skin":"#bd947c","style":0,"robe":false,"accent":"corpse"},{"id":"battlefield_scavenger","name":"전장 수습꾼","kind":"일반","god":"시체갓","role":"scavenger","subtitle":"전투가 끝난 뒤 남은 것을 줍는다","origin":"전쟁터 인근","desc":"전투가 끝나면 버려진 장비와 시신을 정리합니다. 무엇이 살아 있고 무엇이 끝났는지 판단하는 일이 점점 어려워집니다.","stats":{"health":61,"mind":34,"intelligence":43,"might":43,"durability":48,"charm":15,"faith":18,"livelihood":39,"order":14,"heresy":8},"traits":["강한 위장"],"hair":"#4a3e38","coat":"#514f4d","eye":"#646d68","skin":"#b98d77","style":2,"robe":false,"accent":"corpse"},{"id":"relic_room_worker","name":"성체 보관실의 잡역","kind":"일반","god":"시체갓","role":"relickeeper","subtitle":"보존할 수 없는 육체를 관리하는 사람","origin":"성체 보관실","desc":"질서교단의 보관실에서 성체와 유품을 옮깁니다. 보존되지 않는 육체도 땅을 성지로 만들 수 있다는 말을 들었습니다.","stats":{"health":56,"mind":50,"intelligence":57,"might":23,"durability":34,"charm":30,"faith":48,"livelihood":22,"order":57,"heresy":3},"traits":["성물 취급"],"hair":"#514c48","coat":"#656b65","eye":"#7c877b","skin":"#cba28c","style":1,"robe":true,"accent":"corpse"},{"id":"scribe_apprentice","name":"문서실 필경 견습","kind":"일반","god":"문명갓","role":"scribe","subtitle":"기록은 사람보다 오래 살아남는다","origin":"수도교회 문서실","desc":"문서실에서 장부와 필사본을 정리합니다. 기록에 남은 규칙은 사람의 기억보다 오래 버틴다는 사실을 압니다.","stats":{"health":49,"mind":60,"intelligence":72,"might":18,"durability":27,"charm":36,"faith":35,"livelihood":29,"order":45,"heresy":0},"traits":["기록 기억술"],"hair":"#47413a","coat":"#6a6b62","eye":"#718b7e","skin":"#d0aa90","style":3,"robe":true,"accent":"civilization"},{"id":"device_repair","name":"장치 수리 견습","kind":"일반","god":"문명갓","role":"repair","subtitle":"쓸모를 증명한 도구를 고치는 사람","origin":"도시 공방","desc":"기어와 잠금장치, 측량 도구를 수리하는 법을 배웁니다. 마을 사람들은 편리함을 원하지만, 편리한 물건이 어디서 왔는지는 잘 묻지 않습니다.","stats":{"health":52,"mind":54,"intelligence":78,"might":25,"durability":32,"charm":32,"faith":21,"livelihood":38,"order":24,"heresy":2},"traits":["시스템 친화"],"hair":"#555047","coat":"#5a625d","eye":"#7e8c83","skin":"#c9a187","style":2,"robe":false,"accent":"civilization"},{"id":"surveyor_child","name":"측량사의 자녀","kind":"일반","god":"문명갓","role":"surveyor","subtitle":"길과 영지의 모양을 재는 사람","origin":"영지 측량소","desc":"측량사의 도구를 들고 땅의 경계와 길이를 기록합니다. 지도를 정확하게 그리면 분쟁이 줄어든다고 배웠지만, 누가 경계를 정하는지는 별개입니다.","stats":{"health":58,"mind":52,"intelligence":67,"might":27,"durability":34,"charm":39,"faith":24,"livelihood":34,"order":25,"heresy":1},"traits":["공간 감각"],"hair":"#5b4c3e","coat":"#596560","eye":"#77877a","skin":"#d4b199","style":0,"robe":false,"accent":"civilization"},{"id":"wish_orphan","name":"소망을 숨긴 고아","kind":"일반","god":"왜곡갓","role":"orphan","subtitle":"이루어질 수 없다는 말을 듣고 자란 아이","origin":"수도교회 고아원","desc":"당신은 언젠가 반드시 이루고 싶은 소망을 감추고 있습니다. 주변 사람들은 그 소망을 순진하다고 부르며 웃습니다.","stats":{"health":51,"mind":62,"intelligence":48,"might":22,"durability":27,"charm":55,"faith":29,"livelihood":14,"order":30,"heresy":4},"traits":["강한 소망"],"hair":"#47404c","coat":"#55505e","eye":"#81708e","skin":"#c79e87","style":1,"robe":true,"accent":"distortion"},{"id":"failed_artisan","name":"실패한 장인","kind":"일반","god":"왜곡갓","role":"artisan","subtitle":"완성 직전에 무너진 작품","origin":"자유민 공방","desc":"여러 번 실패한 작품을 버리지 못합니다. 언젠가 완성될 것이라는 기대는 수치심과 희망을 동시에 남깁니다.","stats":{"health":54,"mind":42,"intelligence":57,"might":30,"durability":34,"charm":27,"faith":20,"livelihood":25,"order":16,"heresy":6},"traits":["독설가"],"hair":"#463841","coat":"#5a4c60","eye":"#82728b","skin":"#c39a84","style":2,"robe":false,"accent":"distortion"},{"id":"oath_keeper","name":"맹세를 붙든 사람","kind":"일반","god":"왜곡갓","role":"oath","subtitle":"한 번 한 약속을 돌이키지 못한다","origin":"작은 귀족 가문","desc":"어린 시절 한 약속을 반드시 지켜야 한다고 믿습니다. 약속을 어기면 그동안 버틴 이유까지 사라질 것 같습니다.","stats":{"health":62,"mind":53,"intelligence":53,"might":31,"durability":38,"charm":42,"faith":72,"livelihood":31,"order":27,"heresy":2},"traits":["불굴의 정신"],"hair":"#39353f","coat":"#55515a","eye":"#7d718a","skin":"#d0ac92","style":3,"robe":false,"accent":"distortion"},{"id":"dice_runner","name":"주사위판 심부름꾼","kind":"일반","god":"다이스갓","role":"runner","subtitle":"결과를 알 수 없는 판에 물을 나른다","origin":"장터 선술집","desc":"도박판에 물과 잔을 나릅니다. 돈을 따는 사람보다 잃은 뒤에도 다시 앉는 사람이 더 오래 기억에 남습니다.","stats":{"health":59,"mind":46,"intelligence":48,"might":25,"durability":32,"charm":47,"faith":18,"livelihood":27,"order":13,"heresy":3},"traits":["수상한 행운"],"hair":"#51463c","coat":"#5f5548","eye":"#8c7e5e","skin":"#c9a087","style":0,"robe":false,"accent":"dice"},{"id":"gambler_apprentice","name":"떠돌이 내기꾼의 견습","kind":"일반","god":"다이스갓","role":"gambler","subtitle":"낮은 확률에 큰 대가를 건다","origin":"유랑 극단","desc":"주사위와 동전으로 사람을 모으는 떠돌이의 곁에서 자랍니다. 운이 실력인지, 실력이 운으로 위장한 것인지 아직 알지 못합니다.","stats":{"health":55,"mind":48,"intelligence":56,"might":28,"durability":30,"charm":61,"faith":15,"livelihood":19,"order":12,"heresy":5},"traits":["도박사의 직감"],"hair":"#665045","coat":"#695b51","eye":"#9e8d63","skin":"#d3ae91","style":2,"robe":false,"accent":"dice"},{"id":"debt_third_child","name":"빚진 집안의 셋째","kind":"일반","god":"다이스갓","role":"debtor","subtitle":"상속보다 빚이 먼저 도착한다","origin":"몰락한 자유민 가문","desc":"가문에는 유산보다 채무가 많습니다. 한 번의 큰 행운만으로 모든 것을 되돌릴 수 있다고 믿고 싶어 합니다.","stats":{"health":51,"mind":44,"intelligence":42,"might":24,"durability":28,"charm":44,"faith":20,"livelihood":8,"order":17,"heresy":4},"traits":["빚의 낙인"],"hair":"#493e36","coat":"#4e5051","eye":"#7f795f","skin":"#c0967d","style":1,"robe":false,"accent":"dice"},{"id":"tax_ledger","name":"세금 장부 견습","kind":"일반","god":"머니갓","role":"ledger","subtitle":"곡물과 숫자로 사람의 삶을 재는 일","origin":"영주 세무 창고","desc":"현물 세금의 양과 납부 기록을 정리합니다. 장부에는 수확량이 적히지만, 그해 겨울에 누가 굶었는지는 별도 항목이 없습니다.","stats":{"health":50,"mind":55,"intelligence":70,"might":18,"durability":26,"charm":30,"faith":24,"livelihood":34,"order":35,"heresy":0},"traits":["장부 계산"],"hair":"#4e463d","coat":"#69675b","eye":"#8a8064","skin":"#cda58b","style":3,"robe":true,"accent":"money"},{"id":"market_haggler","name":"상단의 흥정꾼","kind":"일반","god":"머니갓","role":"haggler","subtitle":"물건보다 가격을 먼저 읽는 사람","origin":"상단","desc":"상단의 흥정꾼을 따라다니며 현물 거래를 배웁니다. 물건의 쓸모와 교환 가치가 언제나 일치하지 않는다는 사실을 압니다.","stats":{"health":56,"mind":48,"intelligence":63,"might":21,"durability":29,"charm":70,"faith":18,"livelihood":48,"order":21,"heresy":1},"traits":["흥정꾼"],"hair":"#605044","coat":"#655c50","eye":"#82745e","skin":"#d3af95","style":2,"robe":false,"accent":"money"},{"id":"indebted_noble","name":"빚진 하급 귀족","kind":"일반","god":"왜곡갓","role":"noble","subtitle":"작위는 남았지만 금고가 비었다","origin":"하급 귀족 가문","desc":"가문에는 작위가 남았지만 금고는 비었습니다. 이름과 인맥을 현금처럼 사용해야 하는 일이 점점 늘어납니다.","stats":{"health":57,"mind":47,"intelligence":58,"might":28,"durability":31,"charm":64,"faith":32,"livelihood":12,"order":43,"heresy":1},"traits":["빚의 낙인","능숙한 화술"],"hair":"#b0aa9c","coat":"#6a7470","eye":"#7c9a8a","skin":"#d9b7a2","style":3,"robe":true,"accent":"distortion"},{"id":"ffabio","name":"파파비오","kind":"원작 인물 IF","god":"특수 관측","role":"ffabio","subtitle":"분리된 기억 · 사랑받았던 파비오라는 증명","origin":"기억과 정체성이 갈라진 자리","desc":"당신은 사랑받았던 파비오였다는 사실을 증명하고 싶습니다. 누군가의 기억을 고쳐 쓰면 자신도 그 기억 속에 들어갈 수 있을 것 같습니다. 그러나 고칠수록 원래의 기억과 당신의 기억은 서로를 부정합니다.","stats":{"health":58,"mind":62,"intelligence":74,"might":32,"durability":34,"charm":78,"faith":24,"livelihood":24,"order":12,"heresy":18},"traits":["불굴의 정신","세 치 혀의 기적"],"hair":"#473b4f","coat":"#5a485f","eye":"#b28bc8","skin":"#d1a58c","style":3,"robe":false,"special":"ffabio","accent":"#a48abc"},{"id":"fabio","name":"파비오","kind":"원작 인물 IF","god":"특수 관측","role":"fabio","subtitle":"개척촌 농노 · 신성력을 감지하지 못하는 체질","origin":"개척촌 농노","desc":"신성력은 존재하지만 당신은 그것을 감지할 수 없는 특수한 체질입니다. 눈에 보이지 않는 것을 증명할 수도, 없다고 단정할 수도 없습니다. 종지기와 오래된 신성문자 사본이 당신의 삶을 바꿀 수 있습니다.","stats":{"health":60,"mind":"N/A","intelligence":"N/A","might":30,"durability":25,"charm":30,"faith":"N/A","livelihood":25,"order":30,"heresy":0},"traits":["피로함","세 치 혀의 기적","천상천하 유아독존"],"hair":"#72513b","coat":"#70604a","eye":"#6b4935","skin":"#d2a48b","style":0,"robe":false,"special":"fabio","accent":"fabio"},{"id":"pandemonium","name":"판도모니움","kind":"원작 인물 IF","god":"특수 관측","role":"pandemonium","subtitle":"전쟁신 플레이어 · 테레스의 육체","origin":"테레스의 육체","desc":"테레스가의 가주 대리를 맡고 있습니다. 무력과 내구는 비정상적으로 높고 일부 정신 관련 수치는 측정되지 않습니다. 여러 영지의 소유권과 노획 장비, 세금 장부가 당신의 결정에 달려 있습니다.","stats":{"health":1750,"mind":"N/A","intelligence":"N/A","might":927,"durability":775,"charm":-1300,"faith":"N/A","livelihood":45,"order":18,"heresy":12},"traits":["부상","피로함","악명높음","신성모독","선빵필승"],"hair":"#6fa6b8","coat":"#416c74","eye":"#4ec2ba","skin":"#d2ac98","style":3,"robe":false,"special":"pandemonium","accent":"pandemonium","traitModifiers":{"피로함":{"health":-223}}}];
+const PEOPLE = [{"id":"pioneer","name":"개척촌 농노","kind":"일반","god":"역병갓","role":"peasant","subtitle":"종자와 겨울을 지켜야 하는 삶","origin":"개척촌 농노","desc":"개척촌에서 태어났습니다. 집과 개간한 땅이 가장 큰 재산이며, 세금은 작물로 납부합니다. 촌장에게 땅을 돌려주면 자유민으로 떠날 수 있습니다.","stats":{"health":58,"mind":45,"intelligence":32,"might":34,"durability":35,"charm":30,"faith":22,"livelihood":28,"order":20,"heresy":0},"traits":["피로함"],"hair":"#51423a","coat":"#67634d","eye":"#695848","skin":"#cba38b","style":0,"robe":false,"accent":"plague"},{"id":"plague_quarantine","name":"격리촌 출신 주민","kind":"일반","god":"역병갓","role":"quarantine","subtitle":"병든 마을의 경계에서 자란 아이","origin":"격리촌","desc":"역병과 고립을 겪은 마을에서 자랐습니다. 사람들은 물과 이동 경로를 먼저 확인하며, 모르는 기침을 두려워합니다.","stats":{"health":48,"mind":40,"intelligence":45,"might":25,"durability":30,"charm":28,"faith":36,"livelihood":18,"order":35,"heresy":2},"traits":["피로함","병색"],"hair":"#51443d","coat":"#4c5c55","eye":"#687f78","skin":"#b9917b","style":1,"robe":false,"accent":"plague"},{"id":"herb_helper","name":"유랑 치료사의 조수","kind":"일반","god":"역병갓","role":"herbalist","subtitle":"약초와 증상의 이름을 외우는 견습생","origin":"유랑 치료사의 행렬","desc":"치료사의 짐을 나르며 약초와 증상의 차이를 배웁니다. 무엇을 고칠 수 있는지와 무엇을 피해야 하는지는 늘 다릅니다.","stats":{"health":62,"mind":48,"intelligence":62,"might":24,"durability":32,"charm":40,"faith":30,"livelihood":26,"order":28,"heresy":1},"traits":["약초 지식"],"hair":"#5a483a","coat":"#687064","eye":"#647d6c","skin":"#d0a68c","style":2,"robe":false,"accent":"plague"},{"id":"border_recruit","name":"변경의 징집병","kind":"일반","god":"전쟁갓","role":"recruit","subtitle":"국경의 분쟁을 먼저 배우는 아이","origin":"변경 영지","desc":"국경의 마을에서 태어났습니다. 영지의 경계가 바뀔 때마다 농지와 징집 명부도 바뀝니다.","stats":{"health":65,"mind":42,"intelligence":34,"might":55,"durability":52,"charm":24,"faith":28,"livelihood":24,"order":30,"heresy":0},"traits":["선빵필승"],"hair":"#463b32","coat":"#5f5145","eye":"#6e5b4a","skin":"#c59a7f","style":0,"robe":false,"accent":"war"},{"id":"estate_guard","name":"영지 경비의 자식","kind":"일반","god":"전쟁갓","role":"guard","subtitle":"문과 성벽을 지키는 법을 배운다","origin":"영주의 성채","desc":"경비대의 규율과 순찰 시간을 익히며 자랐습니다. 싸움을 피하는 법도 임무의 일부입니다.","stats":{"health":58,"mind":48,"intelligence":46,"might":48,"durability":50,"charm":28,"faith":30,"livelihood":34,"order":42,"heresy":0},"traits":["경계 근무"],"hair":"#594a3b","coat":"#535d5a","eye":"#75614d","skin":"#cba48a","style":1,"robe":false,"accent":"war"},{"id":"siege_smith","name":"공성 공방 견습","kind":"일반","god":"전쟁갓","role":"smith","subtitle":"쇠와 나무가 무기로 바뀌는 공방","origin":"공성 공방","desc":"대장장이의 공방에서 나무와 쇠의 무게를 배웁니다. 만든 물건이 누구를 향하는지는 장인의 몫이 아닐 때가 많습니다.","stats":{"health":62,"mind":50,"intelligence":58,"might":45,"durability":48,"charm":27,"faith":25,"livelihood":42,"order":24,"heresy":0},"traits":["무기 수리"],"hair":"#403832","coat":"#596362","eye":"#5b625d","skin":"#d0a58a","style":2,"robe":false,"accent":"war"},{"id":"midwife_helper","name":"산파의 조수","kind":"일반","god":"마더갓","role":"midwife","subtitle":"생명이 태어나는 방의 견습생","origin":"산파의 집","desc":"출산과 병간호를 돕습니다. 세상에 태어나는 생명은 누구나 똑같은 모양으로 시작하지 않는다는 사실을 배웁니다.","stats":{"health":54,"mind":55,"intelligence":62,"might":22,"durability":30,"charm":42,"faith":28,"livelihood":26,"order":33,"heresy":1},"traits":["생체 관찰"],"hair":"#5b4737","coat":"#6b6657","eye":"#5c7967","skin":"#d0aa92","style":1,"robe":false,"accent":"mother"},{"id":"hidden_mutant","name":"기형을 숨긴 사람","kind":"일반","god":"마더갓","role":"mutant","subtitle":"몸의 차이를 감추고 살아가는 아이","origin":"외딴 농가","desc":"태어날 때부터 남들과 다른 신체적 특징이 있습니다. 가족은 그 사실이 교단의 눈에 띄지 않도록 옷과 말을 고릅니다.","stats":{"health":66,"mind":38,"intelligence":42,"might":42,"durability":62,"charm":30,"faith":18,"livelihood":20,"order":12,"heresy":7},"traits":["신체변형"],"hair":"#44382e","coat":"#4e5d55","eye":"#687769","skin":"#c1947c","style":2,"robe":false,"accent":"mother"},{"id":"butcher_apprentice","name":"도축장의 견습","kind":"일반","god":"마더갓","role":"butcher","subtitle":"육체를 부위와 기능으로 읽는 사람","origin":"도축장","desc":"도축장에서 도구를 다루며 자랍니다. 다른 사람들이 외면하는 구조를 차분히 관찰하는 버릇이 생겼습니다.","stats":{"health":63,"mind":46,"intelligence":55,"might":38,"durability":44,"charm":20,"faith":22,"livelihood":35,"order":18,"heresy":4},"traits":["해부 지식"],"hair":"#3f3933","coat":"#5c5547","eye":"#6a665a","skin":"#c69d83","style":0,"robe":false,"accent":"mother"},{"id":"sleepwalker_child","name":"몽유병자의 자녀","kind":"일반","god":"악몽갓","role":"sleepwalker","subtitle":"잠든 사람이 문을 여는 집","origin":"외딴 마을","desc":"가족 중 한 명이 잠든 채 문을 열고 나가는 일이 반복됩니다. 집안에서는 잠들기 전에 문고리를 묶는 습관이 생겼습니다.","stats":{"health":48,"mind":30,"intelligence":46,"might":24,"durability":27,"charm":35,"faith":27,"livelihood":21,"order":20,"heresy":9},"traits":["악몽에 노출"],"hair":"#424049","coat":"#4f555f","eye":"#7b8c9c","skin":"#b99a87","style":1,"robe":false,"accent":"nightmare"},{"id":"nightmare_survivor","name":"악몽에서 깨어난 아이","kind":"일반","god":"악몽갓","role":"survivor","subtitle":"잊으려 해도 반복되는 밤","origin":"수도교회 부근","desc":"이유를 설명할 수 없는 악몽을 여러 번 겪었습니다. 깨어 있는 동안에도 꿈의 세부 사항을 확인하려고 합니다.","stats":{"health":52,"mind":65,"intelligence":45,"might":28,"durability":30,"charm":32,"faith":42,"livelihood":18,"order":37,"heresy":6},"traits":["불굴의 정신"],"hair":"#55505b","coat":"#555b67","eye":"#8b9ab2","skin":"#c9a38b","style":2,"robe":false,"accent":"nightmare"},{"id":"night_watch","name":"야간 경비의 견습","kind":"일반","god":"악몽갓","role":"watch","subtitle":"남들이 잠든 시간을 지키는 사람","origin":"성문 야간초소","desc":"사람들이 잠든 시간에 성문과 창고를 지키는 일을 배웁니다. 밤의 소리를 구분하는 능력이 생겼지만 모든 소리를 설명할 수는 없습니다. 그래서도 안 되고요.","stats":{"health":60,"mind":48,"intelligence":50,"might":38,"durability":40,"charm":26,"faith":20,"livelihood":33,"order":34,"heresy":2},"traits":["야간 감각"],"hair":"#35353b","coat":"#4d5559","eye":"#73838c","skin":"#c59b82","style":0,"robe":false,"accent":"nightmare"},{"id":"chapel_singer","name":"예배당의 노래꾼","kind":"일반","god":"해피갓","role":"singer","subtitle":"노래로 슬픔을 덮으라는 사람들","origin":"수도교회","desc":"예배당에서 노래를 부릅니다. 노래로 기쁨과 행복을 덮습니다.","stats":{"health":55,"mind":45,"intelligence":42,"might":20,"durability":28,"charm":58,"faith":52,"livelihood":24,"order":62,"heresy":0},"traits":["공명 감수성"],"hair":"#716453","coat":"#68685e","eye":"#8eaa9b","skin":"#d7b49a","style":3,"robe":true,"accent":"happy"},{"id":"numb_child","name":"슬픔을 잃은 사람","kind":"일반","god":"해피갓","role":"numb","subtitle":"울어야 할 때도 표정이 바뀌지 않는다","origin":"가난한 구호원","desc":"큰 상실을 겪은 뒤 슬픔을 거의 느끼지 못합니다. 주변 사람들은 회복했다고 말하지만 잘 모르겠습니다. 한 번 더 겪어보면 알게 될까요?","stats":{"health":57,"mind":25,"intelligence":38,"might":24,"durability":31,"charm":25,"faith":35,"livelihood":16,"order":43,"heresy":4},"traits":["감정 결여","무쾌감"],"hair":"#4f4c49","coat":"#555958","eye":"#70766e","skin":"#c6a08a","style":1,"robe":false,"accent":"happy"},{"id":"festival_actor","name":"축제 광대의 자녀","kind":"일반","god":"해피갓","role":"performer","subtitle":"웃음을 팔아 식량을 얻는 집안","origin":"장터 축제단","desc":"축제 때 사람들을 웃기는 일을 돕습니다. 타인의 기분을 바꾸는 법을 배웠지만, 자신이 느끼는 감정은 별개의 문제입니다.","stats":{"health":56,"mind":48,"intelligence":51,"might":25,"durability":30,"charm":72,"faith":25,"livelihood":33,"order":19,"heresy":1},"traits":["능숙한 화술"],"hair":"#6a4f40","coat":"#67524d","eye":"#836e59","skin":"#d5ad91","style":3,"robe":false,"accent":"happy"},{"id":"gravedigger","name":"묘지기의 견습","kind":"일반","god":"시체갓","role":"gravedigger","subtitle":"무덤을 파고 이름을 새기는 사람","origin":"교회 묘지","desc":"무덤을 파고 묘비를 세우는 일을 배웁니다. 죽은 이의 이름을 제대로 기록하는 일이 산 자의 규칙과 얼마나 가까운지 알게 됩니다.","stats":{"health":54,"mind":49,"intelligence":50,"might":36,"durability":42,"charm":22,"faith":35,"livelihood":27,"order":31,"heresy":2},"traits":["죽음과 친숙함"],"hair":"#3d3935","coat":"#555b58","eye":"#68645b","skin":"#bd947c","style":0,"robe":false,"accent":"corpse"},{"id":"battlefield_scavenger","name":"전장 수습꾼","kind":"일반","god":"시체갓","role":"scavenger","subtitle":"전투가 끝난 뒤 남은 것을 줍는다","origin":"전쟁터 인근","desc":"전투가 끝나면 버려진 장비와 시신을 정리합니다. 무엇이 살아 있고 무엇이 끝났는지 판단하는 일이 점점 어려워집니다.","stats":{"health":61,"mind":34,"intelligence":43,"might":43,"durability":48,"charm":15,"faith":18,"livelihood":39,"order":14,"heresy":8},"traits":["강한 위장"],"hair":"#4a3e38","coat":"#514f4d","eye":"#646d68","skin":"#b98d77","style":2,"robe":false,"accent":"corpse"},{"id":"relic_room_worker","name":"성체 보관실의 잡역","kind":"일반","god":"시체갓","role":"relickeeper","subtitle":"보존할 수 없는 육체를 관리하는 사람","origin":"성체 보관실","desc":"질서교단의 보관실에서 성체와 유품을 옮깁니다. 보존되지 않는 육체도 땅을 성지로 만들 수 있다는 말을 들었습니다.","stats":{"health":56,"mind":50,"intelligence":57,"might":23,"durability":34,"charm":30,"faith":48,"livelihood":22,"order":57,"heresy":3},"traits":["성물 취급"],"hair":"#514c48","coat":"#656b65","eye":"#7c877b","skin":"#cba28c","style":1,"robe":true,"accent":"corpse"},{"id":"scribe_apprentice","name":"문서실 필경 견습","kind":"일반","god":"문명갓","role":"scribe","subtitle":"기록은 사람보다 오래 살아남는다","origin":"수도교회 문서실","desc":"문서실에서 장부와 필사본을 정리합니다. 기록에 남은 규칙은 사람의 기억보다 오래 버틴다는 사실을 압니다.","stats":{"health":49,"mind":60,"intelligence":72,"might":18,"durability":27,"charm":36,"faith":35,"livelihood":29,"order":45,"heresy":0},"traits":["기록 기억술"],"hair":"#47413a","coat":"#6a6b62","eye":"#718b7e","skin":"#d0aa90","style":3,"robe":true,"accent":"civilization"},{"id":"device_repair","name":"장치 수리 견습","kind":"일반","god":"문명갓","role":"repair","subtitle":"쓸모를 증명한 도구를 고치는 사람","origin":"도시 공방","desc":"기어와 잠금장치, 측량 도구를 수리하는 법을 배웁니다. 마을 사람들은 편리함을 원하지만, 편리한 물건이 어디서 왔는지는 잘 묻지 않습니다.","stats":{"health":52,"mind":54,"intelligence":78,"might":25,"durability":32,"charm":32,"faith":21,"livelihood":38,"order":24,"heresy":2},"traits":["시스템 친화"],"hair":"#555047","coat":"#5a625d","eye":"#7e8c83","skin":"#c9a187","style":2,"robe":false,"accent":"civilization"},{"id":"surveyor_child","name":"측량사의 자녀","kind":"일반","god":"문명갓","role":"surveyor","subtitle":"길과 영지의 모양을 재는 사람","origin":"영지 측량소","desc":"측량사의 도구를 들고 땅의 경계와 길이를 기록합니다. 지도를 정확하게 그리면 분쟁이 줄어든다고 배웠지만, 누가 경계를 정하는지는 별개입니다.","stats":{"health":58,"mind":52,"intelligence":67,"might":27,"durability":34,"charm":39,"faith":24,"livelihood":34,"order":25,"heresy":1},"traits":["공간 감각"],"hair":"#5b4c3e","coat":"#596560","eye":"#77877a","skin":"#d4b199","style":0,"robe":false,"accent":"civilization"},{"id":"wish_orphan","name":"소망을 숨긴 고아","kind":"일반","god":"왜곡갓","role":"orphan","subtitle":"이루어질 수 없다는 말을 듣고 자란 아이","origin":"수도교회 고아원","desc":"당신은 언젠가 반드시 이루고 싶은 소망을 감추고 있습니다.","stats":{"health":51,"mind":62,"intelligence":48,"might":22,"durability":27,"charm":55,"faith":29,"livelihood":14,"order":30,"heresy":4},"traits":["강한 소망"],"hair":"#47404c","coat":"#55505e","eye":"#81708e","skin":"#c79e87","style":1,"robe":true,"accent":"distortion"},{"id":"failed_artisan","name":"실패한 장인","kind":"일반","god":"왜곡갓","role":"artisan","subtitle":"완성 직전에 무너진 작품","origin":"자유민 공방","desc":"여러 번 실패한 작품을 버리지 못합니다. 언젠가 완성될 것이라는 기대는 수치심과 희망을 동시에 남깁니다.","stats":{"health":54,"mind":42,"intelligence":57,"might":30,"durability":34,"charm":27,"faith":20,"livelihood":25,"order":16,"heresy":6},"traits":["독설가"],"hair":"#463841","coat":"#5a4c60","eye":"#82728b","skin":"#c39a84","style":2,"robe":false,"accent":"distortion"},{"id":"oath_keeper","name":"맹세를 붙든 사람","kind":"일반","god":"왜곡갓","role":"oath","subtitle":"한 번 한 약속을 돌이키지 못한다","origin":"작은 귀족 가문","desc":"어린 시절 한 약속을 반드시 지켜야 한다고 믿습니다. 약속을 어기면 그동안 버틴 이유까지 사라질 것 같습니다.","stats":{"health":62,"mind":53,"intelligence":53,"might":31,"durability":38,"charm":42,"faith":72,"livelihood":31,"order":27,"heresy":2},"traits":["불굴의 정신"],"hair":"#39353f","coat":"#55515a","eye":"#7d718a","skin":"#d0ac92","style":3,"robe":false,"accent":"distortion"},{"id":"dice_runner","name":"주사위판 심부름꾼","kind":"일반","god":"다이스갓","role":"runner","subtitle":"결과를 알 수 없는 판에 물을 나른다","origin":"장터 선술집","desc":"도박판에 물과 잔을 나릅니다. 돈을 따는 사람보다 잃은 뒤에도 다시 앉는 사람이 더 오래 기억에 남습니다. 팁을 많이 주고, 슬쩍하기도 쉬우니까요.","stats":{"health":59,"mind":46,"intelligence":48,"might":25,"durability":32,"charm":47,"faith":18,"livelihood":27,"order":13,"heresy":3},"traits":["수상한 행운"],"hair":"#51463c","coat":"#5f5548","eye":"#8c7e5e","skin":"#c9a087","style":0,"robe":false,"accent":"dice"},{"id":"gambler_apprentice","name":"떠돌이 내기꾼의 견습","kind":"일반","god":"다이스갓","role":"gambler","subtitle":"낮은 확률에 큰 대가를 건다","origin":"유랑 극단","desc":"주사위와 동전으로 사람을 모으는 떠돌이의 곁에서 자랍니다. 운이 실력인지, 실력이 운으로 위장한 것인지 아직 알지 못합니다.","stats":{"health":55,"mind":48,"intelligence":56,"might":28,"durability":30,"charm":61,"faith":15,"livelihood":19,"order":12,"heresy":5},"traits":["도박사의 직감"],"hair":"#665045","coat":"#695b51","eye":"#9e8d63","skin":"#d3ae91","style":2,"robe":false,"accent":"dice"},{"id":"debt_third_child","name":"빚진 집안의 셋째","kind":"일반","god":"다이스갓","role":"debtor","subtitle":"상속보다 빚이 먼저 도착한다","origin":"몰락한 자유민 가문","desc":"가문에는 유산보다 채무가 많습니다. 한 번의 큰 행운만으로 모든 것을 되돌릴 수 있다고 믿고 싶어 합니다.","stats":{"health":51,"mind":44,"intelligence":42,"might":24,"durability":28,"charm":44,"faith":20,"livelihood":8,"order":17,"heresy":4},"traits":["빚의 낙인"],"hair":"#493e36","coat":"#4e5051","eye":"#7f795f","skin":"#c0967d","style":1,"robe":false,"accent":"dice"},{"id":"tax_ledger","name":"세금 장부 견습","kind":"일반","god":"머니갓","role":"ledger","subtitle":"곡물과 숫자로 사람의 삶을 재는 일","origin":"영주 세무 창고","desc":"현물 세금의 양과 납부 기록을 정리합니다. 장부에는 수확량이 적히지만, 그해 겨울에 누가 굶었는지는 별도 항목이 없습니다.","stats":{"health":50,"mind":55,"intelligence":70,"might":18,"durability":26,"charm":30,"faith":24,"livelihood":34,"order":35,"heresy":0},"traits":["장부 계산"],"hair":"#4e463d","coat":"#69675b","eye":"#8a8064","skin":"#cda58b","style":3,"robe":true,"accent":"money"},{"id":"market_haggler","name":"상단의 흥정꾼","kind":"일반","god":"머니갓","role":"haggler","subtitle":"물건보다 가격을 먼저 읽는 사람","origin":"상단","desc":"상단의 흥정꾼을 따라다니며 현물 거래를 배웠습니다. 물건의 쓸모와 교환 가치가 언제나 일치하지 않는다는 사실을 압니다. 그래서 선물 거래를 만들었으나...","stats":{"health":56,"mind":48,"intelligence":63,"might":21,"durability":29,"charm":70,"faith":18,"livelihood":48,"order":21,"heresy":1},"traits":["흥정꾼"],"hair":"#605044","coat":"#655c50","eye":"#82745e","skin":"#d3af95","style":2,"robe":false,"accent":"money"},{"id":"indebted_noble","name":"빚진 하급 귀족","kind":"일반","god":"왜곡갓","role":"noble","subtitle":"작위는 남았지만 금고가 비었다","origin":"하급 귀족 가문","desc":"가문에는 작위가 남았지만 금고는 비었습니다. 이름과 인맥을 현금처럼 사용해야 하는 일이 점점 늘어납니다.","stats":{"health":57,"mind":47,"intelligence":58,"might":28,"durability":31,"charm":64,"faith":32,"livelihood":12,"order":43,"heresy":1},"traits":["빚의 낙인","능숙한 화술"],"hair":"#b0aa9c","coat":"#6a7470","eye":"#7c9a8a","skin":"#d9b7a2","style":3,"robe":true,"accent":"distortion"},{"id":"ffabio","name":"파파비오","kind":"원작 인물 if","god":"특수 관측","role":"ffabio","subtitle":"분리된 기억 · 사랑받았던 파비오라는 증명","origin":"기억과 정체성이 갈라진 자리","desc":"당신은 사랑받았던 파비오였다는 사실을 증명하고 싶습니다. 누군가의 기억을 고쳐 쓰면 자신도 그 기억 속에 들어갈 수 있을 것 같습니다. 그러나 고칠수록 원래의 기억과 당신의 기억은 서로를 부정합니다.","stats":{"health":58,"mind":62,"intelligence":74,"might":32,"durability":34,"charm":78,"faith":24,"livelihood":24,"order":12,"heresy":18},"traits":["불굴의 정신","세 치 혀의 기적"],"hair":"#473b4f","coat":"#5a485f","eye":"#b28bc8","skin":"#d1a58c","style":3,"robe":false,"special":"ffabio","accent":"#a48abc"},{"id":"fabio","name":"파비오","kind":"원작 인물 if","god":"특수 관측","role":"fabio","subtitle":"개척촌 농노 · 논-플레이어블-캐릭터(NPC)","origin":"개척촌 농노","desc":"이미 다른 플레이어가 플레이 중인 캐릭터입니다.","stats":{"health":60,"mind":"N/A","intelligence":"N/A","might":30,"durability":25,"charm":30,"faith":"N/A","livelihood":25,"order":30,"heresy":0},"traits":["피로함","세 치 혀의 기적","천상천하 유아독존"],"hair":"#72513b","coat":"#70604a","eye":"#6b4935","skin":"#d2a48b","style":0,"robe":false,"special":"fabio","accent":"fabio"},{"id":"pandemonium","name":"판도모니움","kind":"원작 인물 if","god":"특수 관측","role":"pandemonium","subtitle":"전쟁신 플레이어 · 테레스의 육체","origin":"테레스의 육체","desc":"테레스가의 가주 대리를 맡고 있습니다. 무력과 내구는 비정상적으로 높고 일부 정신 관련 수치는 측정되지 않습니다. 여러 영지의 소유권과 노획 장비, 세금 장부가 당신의 결정에 달려 있습니다. 물론 그것들을 전부 내팽겨치고 당신의 유일한 그 사람을 찾아 달려갈 수도 있습니다.","stats":{"health":1750,"mind":"N/A","intelligence":"N/A","might":927,"durability":775,"charm":-1300,"faith":"N/A","livelihood":45,"order":18,"heresy":12},"traits":["피로함","악명높음","신성모독","선빵필승"],"hair":"#6fa6b8","coat":"#416c74","eye":"#4ec2ba","skin":"#d2ac98","style":3,"robe":false,"special":"pandemonium","accent":"pandemonium","traitModifiers":{"피로함":{"health":-223}}}];
 
 
 // Runtime roster and entry points. Inactive profiles remain in the data so their
@@ -4918,15 +4918,16 @@ const DR_SCENARIO_DATA = {
         27
       ],
       "cond": {},
-      "text": "27살 봄\r\n",
+      "text": "27살 봄입니다.\n\n빙의한지 이틀만에 당신은 지루해졌습니다.\n\n로클렘은 영지 판도를 끔찍하게 쪼개놓은 데다가 형도 없는 VR 컨클루드를 몇년이나 플레이하라니 끔찍하기 짝이 없는 소리입니다. \n\n당신은 퀘스트창을 스팸처럼 띄우는 도우미를 어떻게 차단할 지 생각하며 qwerasdf를 반복해서 발음합니다. 아무 창도 뜨지 않지만 이 게임에 그렇게 목숨을 걸었던 형이 없다는 건 말도 안 되는 일입니다. \n\n당신은... ",
+	  "displayTitle": "No 형 No Life",
       "choices": [
         {
-          "label": "형이 없습니다. 지루합니다.",
+          "label": "형에게 디코 차단당했던 기억을 떠올리며 울음을 터트립니다.",
           "sourceOrigin": "source",
           "next": "S31-27-fall-i"
         },
         {
-          "label": "당신은 몰래 훔쳐보고 기억해뒀던 형의 부계 이름을 불러 봤습니다.",
+          "label": "몰래 훔쳐보고 기억해뒀던 형의 부계 이름을 부릅니다.",
           "sourceOrigin": "source",
           "next": "S31-27-spring-ii"
         }
@@ -5094,6 +5095,7 @@ const DR_SCENARIO_DATA = {
         27
       ],
       "cond": {},
+	  "displayTitle": "인간 난로 강매 계획",
       "text": "27살 겨울\r\n\r\n형을 만났습니다!!\r\n\r\n기쁩니다!!\r\n\r\n",
       "choices": [],
       "sourceOrigin": "source",
@@ -5130,6 +5132,7 @@ const DR_SCENARIO_DATA = {
         27
       ],
       "cond": {},
+	  "displayTitle": "형 나 없으면 이 게임 망한다며",
       "text": "27살 겨울\n\n끝내 형을 만나지 못했습니다. 내일이면 별하늘이 열립니다. 형이 없는 세상은 지루하고 심심합니다.",
       "choices": [
         {
@@ -6905,7 +6908,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-BORDER_RECRUIT-12",
           "age": 12,
           "title": "국경 표지의 새 흠집",
-          "text": "국경의 돌에 새 흠집이 생겼습니다. 어른들은 영지 경계가 바뀌면 세금과 징집 명부도 바뀐다고 합니다. 멀리서 돌아온 병사는 부러진 화살촉을 보여 주며, 누구도 먼저 쏘지 않았다고 주장합니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여주세요.",
           "choices": [
             {
               "label": "징집표의 빈칸을 모르는 척합니다",
@@ -6950,7 +6953,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-BORDER_RECRUIT-15",
           "age": 15,
           "title": "징집 명부의 빈 이름",
-          "text": "영지군의 명부가 다시 내려왔습니다. 당신의 이름은 빈칸에 가까운 곳에 적혀 있고, 친척은 지금 들어가면 밥과 장비를 받을 수 있다고 합니다. 초소에서 본 부러진 화살촉이 아직 주머니에 있습니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여주세요.",
           "flagAppend": [
             {
               "ifFlag": "border_recruit_quiet12",
@@ -7016,7 +7019,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-BORDER_RECRUIT-30",
           "age": 30,
           "title": "징집 명부와 국경의 갈림길",
-          "text": "서른 해를 넘기며 변경 영지에서 익힌 징집 명부와 국경의 일은 당신의 생계이자 족쇄가 되었습니다. 보관해 둔 부러진 화살촉을(를) 어떻게 처리할지 정해야 합니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여주세요.",
           "choices": [
             {
               "label": "징집을 미루고 가족의 일을 돕습니다",
@@ -7067,7 +7070,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-BORDER_RECRUIT-45",
           "age": 45,
           "title": "오래된 부러진 화살촉의 처분",
-          "text": "마흔다섯의 겨울이 왔습니다. 평생 다뤄 온 징집 명부와 국경와 손때 묻은 부러진 화살촉을(를) 누구에게 남기거나 어디에 묻을지 결정할 때입니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여주세요.",
           "choices": [
             {
               "label": "징집 명부와 국경의 방식과 부러진 화살촉을 후대에 물려준다",
@@ -7122,7 +7125,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-ESTATE_GUARD-12",
           "age": 12,
           "title": "성문 앞의 열쇠 꾸러미",
-          "text": "성문 경비가 열쇠 하나를 잃어버렸습니다. 문을 닫기 전까지 찾지 못하면 야간 근무자 전원이 책임을 져야 합니다. 관리인은 누가 마지막으로 창고에 드나들었는지 묻고, 문지기는 침묵합니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여주세요.",
           "choices": [
             {
               "label": "잃어버린 열쇠를 찾는 일을 돕습니다",
@@ -7167,7 +7170,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-ESTATE_GUARD-15",
           "age": 15,
           "title": "성문 근무의 제안",
-          "text": "성문 경비가 야간 근무자를 더 뽑습니다. 숙식을 제공하지만, 경계를 놓치면 담당자의 죄가 됩니다. 당신은 열쇠와 장부가 어떻게 사람을 묶는지 이미 보았습니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여주세요.",
           "flagAppend": [
             {
               "ifFlag": "estate_guard_quiet12",
@@ -7233,7 +7236,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-ESTATE_GUARD-30",
           "age": 30,
           "title": "열쇠와 출입 기록의 갈림길",
-          "text": "서른 해를 넘기며 영주의 성채에서 익힌 열쇠와 출입 기록의 일은 당신의 생계이자 족쇄가 되었습니다. 보관해 둔 열쇠 꾸러미을(를) 어떻게 처리할지 정해야 합니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여주세요.",
           "choices": [
             {
               "label": "성 안의 물품 장부를 맡습니다",
@@ -7284,7 +7287,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-ESTATE_GUARD-45",
           "age": 45,
           "title": "오래된 열쇠 꾸러미의 처분",
-          "text": "마흔다섯의 겨울이 왔습니다. 평생 다뤄 온 열쇠와 출입 기록와 손때 묻은 열쇠 꾸러미을(를) 누구에게 남기거나 어디에 묻을지 결정할 때입니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여주세요.",
           "choices": [
             {
               "label": "열쇠와 출입 기록의 방식과 열쇠 꾸러미을 후대에 물려준다",
@@ -7339,7 +7342,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-SIEGE_SMITH-12",
           "age": 12,
           "title": "공방에 도착한 부러진 화살촉",
-          "text": "공성 공방에 부러진 화살촉과 갈라진 방패가 실려 왔습니다. 대장장이는 쇠를 녹이기 전에 무엇이 부러졌는지 살펴보라고 합니다. 만든 물건이 누구에게 향할지는 견습생이 정할 수 없습니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여 주세요(메타발언 아니고 진짜 오류면 수정해야합니다).",
           "choices": [
             {
               "label": "낡은 도구를 수리합니다",
@@ -7384,7 +7387,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-SIEGE_SMITH-15",
           "age": 15,
           "title": "공방의 견습 계약",
-          "text": "공성 공방의 주인은 정식 견습으로 남을지, 보급대에 합류해 무기를 현장으로 가져갈지 묻습니다. 어느 쪽이든 쇠와 나무를 다루겠지만, 완성된 물건이 쓰이는 곳은 달라집니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여 주세요(메타발언 아니고 진짜 오류면 수정해야합니다).",
           "flagAppend": [
             {
               "ifFlag": "siege_smith_quiet12",
@@ -7450,7 +7453,7 @@ const DR_SCENARIO_DATA = {
           "id": "VAR-SIEGE_SMITH-30",
           "age": 30,
           "title": "공방의 무기와 장비의 갈림길",
-          "text": "서른 해를 넘기며 공성 공방에서 익힌 공방의 무기와 장비의 일은 당신의 생계이자 족쇄가 되었습니다. 보관해 둔 부러진 화살촉을(를) 어떻게 처리할지 정해야 합니다.",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여 주세요(메타발언 아니고 진짜 오류면 수정해야합니다).",
           "choices": [
             {
               "label": "수리 기술을 익히고 재료를 아낍니다",
@@ -7500,8 +7503,8 @@ const DR_SCENARIO_DATA = {
         {
           "id": "VAR-SIEGE_SMITH-45",
           "age": 45,
-          "title": "오래된 부러진 화살촉의 처분",
-          "text": "마흔다섯의 겨울이 왔습니다. 평생 다뤄 온 공방의 무기와 장비와 손때 묻은 부러진 화살촉을(를) 누구에게 남기거나 어디에 묻을지 결정할 때입니다.",
+          "title": "오류 처분",
+          "text": "해당 문구는 캐릭터 삭제로 인하여 비활성화되었으며, 출력될 시 오류입니다. 개발자인 토끼에게 보고하여 주세요(메타발언 아니고 진짜 이거나오면 수정무조건해야합니다).",
           "choices": [
             {
               "label": "공방의 무기와 장비의 방식과 부러진 화살촉을 후대에 물려준다",
@@ -13191,7 +13194,7 @@ const DR_AUTHORED_EVENTS = [
   {
     id: 'CUSTOM-NOBLE-ARM-RETURN', priority: 1, title: '은회색 팔의 귀환', kicker: '서품 이후', minAge: 16, maxAge: 99,
     oncePerLife: true, condition: s => s.person.id === 'indebted_noble' && s.eventHistory.includes('S25-arm'),
-    text: '서품이 끝난 뒤, 가문으로 작은 나무 상자가 보내졌습니다. 안에는 은회색으로 변한 팔이 접힌 천 위에 놓여 있습니다. 손가락은 가지런히 모여 있고, 손목에는 수도교회의 봉인 끈이 감겨 있습니다.\n\n당신은 예전에 그 손을 잡았을 때의 온도를 떠올립니다. 상자 안의 손은 차갑습니다. 검수표에는 손가락의 개수와 무게만 적혀 있습니다.',
+    text: '서품이 끝난 뒤, 가문으로 작은 나무 상자가 보내졌습니다. 안에는 은회색으로 변한 팔이 접힌 천 위에 놓여 있습니다. 손가락은 가지런히 모여 있고, 손목에는 수도교회의 봉인 끈이 감겨 있습니다.\n\n당신은 예전에 그 손을 잡았을 때의 온도를 떠올립니다. \n상자 안의 손은 차갑습니다. 검수표에는 손가락의 개수와 무게만 적혀 있습니다.',
     advanceYears: 1, nextCustom: 'CUSTOM-NOBLE-ODD-DEATH-WINDUP', choices: []
   },
   {
@@ -13203,19 +13206,19 @@ const DR_AUTHORED_EVENTS = [
   {
     id: 'CUSTOM-NOBLE-VOICE-RETURN', priority: 1, title: '반송된 노래', kicker: '서품 이후', minAge: 16, maxAge: 99,
     oncePerLife: true, condition: s => s.person.id === 'indebted_noble' && s.eventHistory.includes('S25-voice'),
-    text: '몇 달 뒤 수도교회에서 얇은 기도서가 한 권 도착했습니다. 정식 찬송의 악보 사이에 음정이 어긋난 짧은 노래가 적혀 있습니다.\n\n글씨는 소년의 것이 맞습니다. 악보 아래에는 “웃지 말 것”이라는 메모가 두 번 적혀 있습니다. 당신이 소리 내어 읽자, 마지막 음절에서 복도에서 들었던 목소리가 아주 희미하게 겹쳐 들립니다.\n\n책의 표지에는 소년의 이름 대신 성유물 번호가 적혀 있습니다.',
+    text: '몇 달 뒤 수도교회에서 얇은 기도서가 한 권 도착했습니다. 정식 찬송의 악보 사이에 음정이 어긋난 짧은 노래가 적혀 있습니다.\n\n글씨는 소년의 것이 맞습니다. 악보 아래에는 "웃지 말 것"이라는 메모가 두 번 적혀 있습니다. \n당신이 소리 내어 읽자, 마지막 음절에서 복도에서 들었던 목소리가 아주 희미하게 겹쳐 들립니다.\n\n책의 표지에는 소년의 이름 대신 성유물 번호가 적혀 있습니다.',
     advanceYears: 1, nextCustom: 'CUSTOM-NOBLE-ODD-DEATH-WINDUP', choices: []
   },
   {
     id: 'CUSTOM-NOBLE-ODD-DEATH-WINDUP', priority: 1, title: '족보의 빈칸', kicker: '그로부터 1년 후', minAge: 16, maxAge: 99,
     oncePerLife: true, condition: s => s.person.id === 'indebted_noble', forceOddDeath: true,
-    text: '성유물은 제각기 다른 모양으로 돌아왔습니다. 머리든 팔이든 목소리든, 가문에 도착한 것은 소년의 일부였고 소년 자신은 돌아오지 않았습니다.\n\n당신은 서류를 정리하다가 가계도의 빈칸을 발견합니다. 처음부터 비어 있었던 자리처럼 보입니다. 그 아래에는 당신의 이름도 희미하게 번져 있습니다.\n\n잉크가 마르기 전에 누군가 문을 두드립니다.',
+    text: '성유물은 제각기 다른 모양으로 돌아왔습니다. 머리든 팔이든 목소리든, 소년과 일부의 동일성이 유지되는 형태는 맞습니다.\n\n당신은 서류를 정리하다가 가계도의 빈칸을 발견합니다. 처음부터 비어 있었던 자리처럼 보입니다. 그 아래에는 당신의 이름도 희미하게 번져 있습니다.\n\n당신이 잉크 자국을 재확인하기 전에, 누군가 문을 두드립니다.',
     choices: []
   }
   ,{
     id: 'CUSTOM-MIDWIFE-HELPER-RECORD', priority: 3, title: '산파의 신고서', kicker: '첫 번째 기록', minAge: 15, maxAge: 15,
     oncePerLife: true, condition: s => s.person.id === 'midwife_helper',
-    text: '산파는 신고서에 적힌 숫자를 다시 확인하라고 합니다. 어제 태어난 아이의 다리 개수가 장부와 다르다고 합니다. 아이의 어머니는 그 아이가 살아 있다는 것만으로 충분하다고 말하지만, 사제는 틀린 숫자를 확인하려 합니다. 산파는 당신에게 펜과 칼 중 무엇을 선택할 것인지를 묻습니다.',
+    text: '산파는 신고서에 적힌 숫자를 다시 확인하라고 합니다. 어제 태어난 아이의 다리 개수가 장부와 다르다고 이유입니다. \n\n아이의 어머니는 그 아이가 살아 있다는 것만으로 충분하다고 말하지만, 사제는 틀린 숫자를 확인하려 합니다. \n산파는 당신에게 펜과 칼 중 무엇을 선택할 것인지를 묻습니다.',
     choices: [
       { label: '장부의 숫자를 고쳐 적는다', setFlags: ['midwife_record_corrected'], advanceYears: 3, nextCustom: 'CUSTOM-MIDWIFE-HELPER-RETURN-CORRECTED' },
       { label: '처음 적힌 숫자를 그대로 둔다', setFlags: ['midwife_record_preserved'], advanceYears: 3, nextCustom: 'CUSTOM-MIDWIFE-HELPER-RETURN-PRESERVED' }
@@ -13245,32 +13248,32 @@ const DR_AUTHORED_EVENTS = [
   {
     id: 'CUSTOM-DICE-RUNNER-RETURNED', priority: 3, title: '심부름 값', kicker: '몇 해 후', minAge: 22, maxAge: 65,
     oncePerLife: true, condition: s => s.person.id === 'dice_runner' && !!s.flags.dice_runner_coin_returned,
-    text: '판주는 아직도 당신에게 판돈을 맡깁니다. 돈을 잃은 사람들은 당신에게 화를 내지 않습니다. 적어도 장부의 숫자는 당신이 가져간 적이 없다는 것을 알고 있습니다.',
+    text: '판주는 아직도 당신에게 판돈을 맡깁니다. 돈을 잃은 사람들은 당신에게는 화를 내지 않습니다. 적어도 당신이 숫자로 장난질치는 놈은 아니라는 명성이 형성되었습니다.',
     choices: []
   },
   {
     id: 'CUSTOM-DICE-RUNNER-KEPT', priority: 3, title: '장부의 빈칸', kicker: '몇 해 후', minAge: 22, maxAge: 65,
     oncePerLife: true, condition: s => s.person.id === 'dice_runner' && !!s.flags.dice_runner_coin_kept,
-    text: '그날 이후 판주는 은화를 셀 때마다 탁자 밑을 먼저 살핍니다. 당신은 여전히 판돈을 나릅니다. 누구도 그날의 한 닢을 다시 묻지는 않았습니다.',
+    text: '그날 이후 판주는 은화를 셀 때마다 탁자 밑을 먼저 살핍니다. 당신은 여전히 판돈을 나릅니다.',
     choices: []
   },
   {
     id: 'CUSTOM-GAMBLER-APPRENTICE-INTRO', priority: 2, title: '떠돌이 내기꾼의 견습', kicker: '12세', minAge: 12, maxAge: 12,
     oncePerLife: true, condition: s => s.person.id === 'gambler_apprentice',
-    text: '극단의 떠돌이 내기꾼은 당신에게 판돈을 세는 일을 맡깁니다. 그는 숫자를 틀리면 당신 몫에서 빼겠다고 말합니다. 당신은 틀리지 않습니다. 어느 날 그는 주사위를 당신 앞에 놓고 묻습니다. 구경만 할 것인지, 아니면 당신 몫도 걸어 볼 것인지.',
+    text: '극단의 떠돌이 내기꾼은 당신에게 판돈을 세는 일을 맡깁니다. 그는 숫자를 틀리면 당신 몫에서 빼겠다고 말했지만 당신이 돈을 틀리게 세는 때는 없습니다. \n\n어느 날 그는 주사위를 당신 앞에 놓고 묻습니다. 구경만 할 것인지, 아니면 당신 몫도 걸어 볼 것인지.',
     next: 'S24-1', choices: []
   }
 
   ,{
     id: 'CUSTOM-SIEGE-SMITH-REPAIR-REQUEST', priority: 2, title: '공방에 돌아온 보급대', kicker: '17세', minAge: 17, maxAge: 99,
     oncePerLife: true, condition: s => s.person.id === 'siege_smith',
-    text: '공방에 남아 수리 기술을 배웠든, 보급대에 합류해 장비를 날랐든 당신의 이름은 고장 난 장비를 다룰 줄 아는 견습 명부에 남아 있었습니다.\n\n어느 날 보급대의 수레가 공방으로 돌아옵니다. 새 무기보다 부러진 창과 갈라진 방패가 더 많습니다. 보급대의 서기는 전방 수선소에 사람을 보내야 한다며 당신의 이름을 확인합니다. 공방의 주인은 대답 대신 작업대 위에 놓인 장부를 밀어 줍니다.',
+    text: '해당 컨텐츠는 노잼을 사유로 삭제되었습니다. 이 데이터가 보일시 토끼에게 신고해주십시오.',
     advanceYears: 2, nextCustom: 'CUSTOM-SIEGE-SMITH-FIELD-CONSCRIPTION', choices: []
   },
   {
     id: 'CUSTOM-SIEGE-SMITH-FIELD-CONSCRIPTION', priority: 2, title: '전방 수선소', kicker: '19세', minAge: 19, maxAge: 99,
     oncePerLife: true, condition: s => s.person.id === 'siege_smith',
-    text: '당신은 전방 수선소에서 무기와 방패를 수리하는 일을 맡았습니다. 장비가 망가지는 속도는 공방에서 보던 것보다 빨랐고, 돌아오는 장비에는 주인의 이름이 적혀 있지 않은 경우가 많았습니다.\n\n전쟁이 커진 뒤 지휘관은 숫자와 명부를 다룰 줄 아는 사람을 찾았습니다. 공방에서 수리 기록을 읽고 작성해 본 경험 때문에 당신은 징집병 명부에 이름을 올리게 되었습니다. 어느 날 서기는 신성 문자로 된 선전포고문을 당신 앞에 내려놓습니다.',
+    text: '해당 컨텐츠는 노잼을 사유로 삭제되었습니다. 이 데이터가 보일시 토끼에게 신고해주십시오.',
     setFlags: ['siege_smith_conscripted'], advanceYears: 1, nextCustom: 'S18-1', choices: []
   },
   {
@@ -16428,9 +16431,9 @@ var SFX = { cast:function(){play('cast');}, bite:function(){play('bite');}, pull
   }
   const LIFE_SUMMARY_VOICES = {
     pioneer: '다크렐름 농노 복지는 좋다고 들은 것 같은데 이웃집 농노가 헛소리를 한 게 틀림없습니다. 하긴 그 농노는 매일 목을 매려다 넘어지곤 했었지요.',
-    plague_quarantine: '당신은 문턱 너머의 은화와 기침 소리 사이에서 마을의 경계를 배웠습니다.',
+    plague_quarantine: '망막에 새겨진 문턱 너머 은화의 모습과 고막을 들쑤시는 기침 소리가 당신이 죽는 순간까지 함께 따라왔습니다.',
     siege_smith: '당신이 만든 물건은 당신의 손을 떠나 다른 사람의 운명이 되었습니다. 당신의 운명도 당신의 손에 달려 있진 않았던 거 같네요.',
-    midwife_helper: '당신은 태어나는 사람과 떠나는 사람의 이름을 같은 자리에 적었습니다.',
+    midwife_helper: '당신은 사랑받았습니다.',
     hidden_mutant: '끝날 때까지 들키지 않았으니, 괜찮습니다.',
     sleepwalker_child: '당신은 밤에 일어난 일을 아침의 흔적으로만 확인했습니다.',
     numb_child: '당신은 해야 할 일을 잊지 않았습니다.',
@@ -16445,12 +16448,12 @@ var SFX = { cast:function(){play('cast');}, bite:function(){play('bite');}, pull
     oath_keeper: '당신은 아무도 기억하지 못하는 약속을 지키느라 여러 번 다른 길을 포기했습니다.',
     ffabio: '당신은 이전 생애의 기록을 읽었습니다. 읽고 읽고 읽고 읽고 읽고 읽고 읽고 읽고 읽고 읽고 읽고 읽고 읽었는데도 원래의 이름을 되찾을 수는 없었습니다.',
     pandemonium: '당신은 좋아하는 사람의 부계 이름은 항상 외워 둬야 한다는 교훈을 얻었습니다.',
-    default: '당신은 생계를 이어 가며 몇 번의 선택을 했습니다. 관측 장부에는 그 선택과 그 뒤에 남은 것만 기록되었습니다.'
+    default: '당신은 생계를 이어 가며 몇 번의 선택을 했습니다. 사실 default 문구가 출력되면 안되는데 이상하군요. 언젠간 고쳐질지도 모릅니다'
   };
   function renderEndingScreen() {
     if (game.happyRepetition || game.ending === 'pando_happy_death') return renderHappyRepetitionOverlay(true);
     const fullLogs = game.records.slice().reverse().map(r=>`<div class="record-entry"><span class="record-age">${esc(r.age)}세 / ${esc(hideInternalEventCodes(r.title))}</span><div class="record-desc">${esc(hideInternalEventCodes(r.desc))}</div></div>`).join('');
-    const keyChoices = game.records.slice().reverse().filter(r => /선택/.test(r.title) && r.desc).slice(-4);
+    const keyChoices = game.records.slice().reverse().filter(r => /· 선택$/.test(r.title) && r.desc).slice(-4);
     const lifeVoice = LIFE_SUMMARY_VOICES[game.person.id] || LIFE_SUMMARY_VOICES[game.person.role] || LIFE_SUMMARY_VOICES.default;
     const recentChoiceSummary = keyChoices.length
       ? keyChoices.map(r => `${r.age}세: ${hideInternalEventCodes(r.desc).split(' — ')[0]}`).join(' · ')
